@@ -41,10 +41,8 @@ The suite proves both across thousands of random deposit and withdrawal sequence
 
 ## Run it
 
-```
-forge install foundry-rs/forge-std
-forge test
-```
+    git clone --recursive https://github.com/hunterinvariants/foundry-invariant-starter
+    forge test
 
 You should see both invariants pass over 256 runs.
 
