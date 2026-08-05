@@ -1,0 +1,13 @@
+[profile.default]
+src = "src"
+test = "test"
+out = "out"
+libs = ["lib"]
+solc = "0.8.24"
+
+# Invariant testing config. These three lines are what most people never set and then wonder
+# why their invariants find nothing.
+[invariant]
+runs = 256          # how many random sequences to try
+depth = 128         # how many calls per sequence
+fail_on_revert = true   # a reverting call is a bug in your HANDLER, not a pass. Keep this true.
